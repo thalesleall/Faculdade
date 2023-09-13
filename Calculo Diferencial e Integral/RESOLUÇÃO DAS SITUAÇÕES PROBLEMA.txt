@@ -1,0 +1,38 @@
+Aqui estão as resoluções para os dois problemas mencionados anteriormente:
+
+Otimização de funções: Para encontrar o tamanho ideal do buffer para maximizar a taxa de transferência de dados, podemos usar derivadas para encontrar os pontos críticos da função f(x) = 200x / (x^2 + 10). Primeiro, calculamos a derivada de f(x) em relação a x:
+f'(x) = d/dx [200x / (x^2 + 10)]
+      = 200 * d/dx [x / (x^2 + 10)]
+      = 200 * [(d/dx x)(x^2 + 10) - x(d/dx (x^2 + 10))] / (x^2 + 10)^2
+      = 200 * [1 * (x^2 + 10) - x(2x)] / (x^2 + 10)^2
+      = 200 * (10 - x^2) / (x^2 + 10)^2
+
+Em seguida, encontramos os pontos críticos de f(x) resolvendo a equação f'(x) = 0:
+
+200 * (10 - x^2) / (x^2 + 10)^2 = 0
+=> 10 - x^2 = 0
+=> x^2 = 10
+=> x = sqrt(10)
+
+Portanto, o único ponto crítico de f(x) é x = sqrt(10). Para determinar se esse ponto corresponde ao valor máximo de f(x), podemos calcular a segunda derivada de f(x) em relação a x:
+
+f''(x) = d/dx f'(x)
+       = d/dx [200 * (10 - x^2) / (x^2 + 10)^2]
+       = -800x * (3x^2 - 30) / (x^4 + 20x^2 + 100)^2
+
+Substituindo x = sqrt(10) na expressão acima, obtemos:
+
+f''(sqrt(10)) = -800sqrt(10) * (-20) / (200)^2
+              = -0.4
+
+Como f''(sqrt(10)) < 0, concluímos que o ponto x = sqrt(10) corresponde ao valor máximo de f(x). Portanto, o tamanho ideal do buffer para maximizar a taxa de transferência de dados é sqrt(10) MB.
+
+Cálculo de áreas e volumes: Para calcular o volume da cabeça do personagem modelada como um sólido gerado pela rotação da curva y = x^2 em torno do eixo x, para 0 <= x <= 1, podemos usar integrais. O volume do sólido é dado por:
+V = pi * integral[0,1] y^2 dx
+  = pi * integral[0,1] x^4 dx
+  = pi * [x^5/5]_0^1
+  = pi/5
+
+Portanto, o volume da cabeça do personagem é pi/5 unidades cúbicas.
+
+Espero que essas resoluções ajudem a entender como resolver problemas que envolvem derivadas e integrais na área de computação! 😊

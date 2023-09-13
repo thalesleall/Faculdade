@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrevista de emprego Programadores</title>
+</head>
+<body>
+    <div id="container" align="center">
+        <h1>Entrevita de emprego</h1>
+            <div id="divOpcao">
+                Escolha a linguagem que você domina! <br><br><select id="linguagem">
+                    <option value="1"> JavaScript </option>
+                    <option value="2"> React</option>
+                    <option value="3"> Node </option>
+                </select>
+            </div>
+            <br>
+        <div>
+            Quantos anos o senhor(a) tem de experiencia na area de Programação?
+            
+            <input style="margin: 16px auto 2px auto;" id="anos" type="number" placeholder="Anos">
+        </div>
+        <br>
+        <button onclick="calc()">Ver chances!</button>
+        <p id="Chances">
+
+        </p>
+        
+        <p id="Expectativa">
+
+        </p>
+    </div>
+    
+</body>
+
+    <script>
+        function calc(){
+            let anos = Number(document.getElementById("anos").value)
+            let linguagem = Number(document.getElementById("linguagem").value)
+            let salario
+            let expectativa
+            
+            if(anos <= 0 ){
+                salario = "-Anos invalidos-"
+            }
+            else if(anos < 5){
+                switch(linguagem){
+                    case 1: salario = 3000
+                        break
+                    case 2: salario = 5000
+                        break
+                    case 3: salario = 4000
+                        break
+                default: salario = "-Opção inválida-"
+                }
+            }
+            else if(anos >= 5){
+                switch(linguagem){
+                    case 1: salario = 6000
+                        break
+                    case 2: salario = 8000
+                        break
+                    case 3: salario = 7000
+                        break
+                default: salario = "-Opção inválida-"
+            }
+        }
+            if(salario < 4500){
+                expectativa = "Alta"
+            }
+            else if(salario >= 4500 && salario <= 6000){
+                expectativa = "Média"
+            }
+            else if(salario > 6000){
+                expectativa = "Baixa"
+            }
+            else{
+                expectativa = "Error"
+            }
+            document.getElementById("Chances").innerHTML = "Expectativa de salario " + salario
+            document.getElementById("Expectativa").innerHTML = "Expectativa " + expectativa
+    }
+    </script>
+
+</html>

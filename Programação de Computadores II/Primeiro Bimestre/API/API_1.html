@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="API_1.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" placeholder="Informe o CEP">
+        </div>
+        <div>
+            <label for="logradouro">Logradouro</label>
+            <input type="text" id="logradouro" readonly>
+        </div>
+        <div>
+            <label for="complemento">Complemento</label>
+            <input type="text" id="complemento" readonly>
+        </div>
+        <div>
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" readonly>
+        </div>
+        <div>
+            <label for="localidade">Localidade</label>
+            <input type="text" id="localidade" readonly>
+        </div>
+        <div>
+            <label for="uf">UF</label>
+            <input type="text" id="uf" readonly>
+        </div>
+        <div>
+            <label for="ddd">ddd</label>
+            <input type="text" id="ddd" readonly>
+        </div>
+        <div>
+            <button type="button" onclick="buscarCep()">
+                Buscar CEP
+            </button>
+        </div>
+    </form>
+</body>
+</html>
