@@ -8,13 +8,13 @@ function principal(){
     
 }
 
-function entradaDados(){
+function entradaDados(matriz){
     let i, j
 
     for(i = 0; i < 3; i++){
         matriz[i] = []
             for(j = 0; j < 4; j++){
-                matriz[i][j] = Number(prompt((`Digite o valor da posição [${i}, ${j}]`))
+                matriz[i][j] = Number(prompt(`Digite o valor da posição [${i}, ${j}]`))
             }
     }
 }
