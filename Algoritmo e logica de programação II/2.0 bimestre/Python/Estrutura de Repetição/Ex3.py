@@ -10,6 +10,6 @@ while(i != 10):
         acm += numero
         i += 1
     else:
-        print('Numero impar, digite certo arrombado')
+        print('Numero impar, não calculado')
 else:
     print(f'Media aritmetica dos numeros pares: {acm/10}')

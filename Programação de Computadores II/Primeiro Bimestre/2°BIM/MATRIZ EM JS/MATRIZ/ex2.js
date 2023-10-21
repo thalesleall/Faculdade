@@ -1,41 +1,41 @@
-// Faça um matriz de bimestre x notas de alunos 
-
-function principal (){
-    let vetor = []
-    let matriz = []
-    leituraDados(vetor, matriz)
-    mediaBimestre(matriz)
-    calculaMedia(vetor, matriz)
+function main(){
+    matriz = []
+    preencheMatriz(matriz)
+    calcula1220(matriz)
+    mediapar(matriz)
 }
 
-function leituraDados(vetor, matriz){
-    for(let i = 0; i < 3; i++){
-        vetor.push(prompt('Informe o nome do aluno'))
+function preencheMatriz(matriz){
+    for(let i = 0; i < 2; i++){
         matriz[i] = []
-        for (let j=1 ;j<=4;j++) {
-            matriz[i][j] = Number(prompt(`Informe a nota ${j+1}`))
-        }
-    }
-}
-
-function calculaMedia(vetor, matriz){
-    for(let i = 0; i < 3; i++){
-        let soma = 0
         for(let j = 0; j < 4; j++){
-            soma += matriz[i][j]
-
+            matriz[i][j] = Number(prompt(`Digite um numero inteiro: `))
         }
-        console.log(`O aluno ${vetor[i]} teve media ${soma/4}`)
     }
 }
 
-function mediaBimestre(matriz){
-    for(let j = 0; j < 4; j++){
-        let soma = 0
-        for(let i = 0; i<3; i++){
-            soma += matriz[j][i]
+function calcula1220(matriz){
+    for(let i = 0; i < 2; i++){
+        let cont = 0
+        for(let j = 0; j < 4; j++){
+            if(matriz[i][j] >= 12 && matriz[i][j] <= 20){
+                cont++
+            }
         }
-        console.log(`A media do ${i + 1}° bimestre é igual a ${soma/3}`)
+        console.log(`A quantidade de elementos entre 12 e 20 na ${i+1}° linha é igual a ${cont}`)
     }
+}
 
+function mediapar(matriz){
+    let sumpar = 0
+    let cont = 0
+    for(i = 0; i < 2; i++){
+        for(j = 0; j < 4; j++){
+            if(matriz[i][j] % 2 == 0){
+                sumpar += matriz[i][j]
+                cont++
+            }
+        }
+    }
+    console.log(`Media dos numeros pares: ${sumpar/cont}`)
 }
