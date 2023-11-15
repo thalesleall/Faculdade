@@ -6,7 +6,7 @@ def main():
 
 def somatorio(n):
     s = 1
-    for i in range(0, n, 1):
-        s = s + ((i+1)/(i+1)*(i+1))
+    for i in range(1, n+1):
+        s = s + (i/i**2)
     return s
 main()

@@ -1,0 +1,118 @@
+{
+  "palavras": [
+    {
+      "id": 1,
+      "palavra": "Abacaxi",
+      "dica1": "Fruta Citrica",
+      "dica2": "Doce"
+    },
+    {
+      "id": 2,
+      "palavra": "Cachorro",
+      "dica1": "Animal",
+      "dica2": "Melhor amigo do homem"
+    },
+    {
+      "id": 3,
+      "palavra": "Livro",
+      "dica1": "Objeto",
+      "dica2": "Leitura"
+    },
+    {
+      "id": 4,
+      "palavra": "Sol",
+      "dica1": "Quente",
+      "dica2": "Estrela"
+    },
+    {
+      "id": 5,
+      "palavra": "Felicidade",
+      "dica1": "Sentimento",
+      "dica2": "Alegria"
+    },
+    {
+      "id": 6,
+      "palavra": "Musica",
+      "dica1": "Se escuta",
+      "dica2": "Forma de arte"
+    },
+    {
+      "id": 7,
+      "palavra": "Sorriso",
+      "dica1": "Se faz com os dentes",
+      "dica2": "Significa felicidade"
+    },
+    {
+      "id": 8,
+      "palavra": "Montanha",
+      "dica1": "Feito de terra",
+      "dica2": "Pode escalar"
+    },
+    {
+      "id": 9,
+      "palavra": "Chocolate",
+      "dica1": "Doce",
+      "dica2": "Da para fazer sobremesas"
+    },
+    {
+      "id": 10,
+      "palavra": "Oceano",
+      "dica1": "Cheio de agua",
+      "dica2": "Existem 4"
+    },
+    {
+      "id": 11,
+      "palavra": "Sonho",
+      "dica1": "Se faz dormindo",
+      "dica2": "Coisas loucas"
+    },
+    {
+      "id": 12,
+      "palavra": "Computador",
+      "dica1": "Tecnologico",
+      "dica2": "Esta usando agora"
+    },
+    {
+      "id": 13,
+      "palavra": "Jardim",
+      "dica1": "Espaço pra plantas",
+      "dica2": "Onde se poe as flores"
+    },
+    {
+      "id": 14,
+      "palavra": "Caneta",
+      "dica1": "Se usa para escrever",
+      "dica2": "Tem tinta"
+    },
+    {
+      "id": 15,
+      "palavra": "Estrela",
+      "dica1": "Brilha no céu",
+      "dica2": "Uma hora explode"
+    },
+    {
+      "id": 16,
+      "palavra": "Biblioteca",
+      "dica1": "Onde tem livros",
+      "dica2": "Lugar para estudar"
+    },
+    {
+      "id": 17,
+      "palavra": "Piano",
+      "dica1": "Faz musica",
+      "dica2": "Forma de arte"
+    },
+    {
+      "id": 18,
+      "palavra": "Girassol",
+      "dica1": "Um tipo de flor",
+      "dica2": "Tem a cor amarela"
+    },
+    {
+      "id": 19,
+      "palavra": "Chapéu",
+      "dica1": "Se poe na cabeça",
+      "dica2": "Protege do sol"
+    }
+  ]
+}
