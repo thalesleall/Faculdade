@@ -4,59 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie API</title>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap');
-
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: 'Montserrat', sans-serif;
-            font-family: 'Quicksand', sans-serif;
-        }
-        
-        #formulario{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            margin: 70px;
-            
-        }
-        #input{
-            margin: 35px;
-        }</style>
-    <script>
-        let buscaFilme = async () =>{
-    let filme = document.getElementById("filme").value;
-    let url = `https://www.omdbapi.com/?apikey=5df8c629&t=${filme}`
-
-    let resposta = await fetch(url);
-    let respostaJSON = await resposta.json();
-
-    if(!respostaJSON.Title){
-        alert(`O Filme não existe`);
-    }
-    else{
-        document.getElementById("title").innerHTML = respostaJSON.Title;
-        document.getElementById("Released").innerHTML = respostaJSON.Released;
-        document.getElementById("Runtime").innerHTML = respostaJSON.Runtime;
-        document.getElementById("Genre").innerHTML = respostaJSON.Genre;
-        document.getElementById("Poster").setAttribute('src', respostaJSON.Poster)
-    }
-     
-}
-    </script>
-
+    <link rel="stylesheet" type="text/css" href="./Trabalho1bim.css">
 </head>
 <body>
     <form id="formulario">
         <div id="input">
-            
-            Digite o nome do seu fime: <br><input type="text" id="filme" placeholder="The Wolf of Wall Street">
+            Digite o nome do seu filme: <br><input type="text" id="filme" placeholder="The Wolf of Wall Street">
             <button type="button" onclick="buscaFilme()">Buscar</button>
         </div>
         <div id="resposta">
             <p>
-                Titulo do filme:
+                Título do filme:
                 <p id="title" style="color: red; font-weight: bold"></p>
                 <hr>
                 Data de lançamento:
@@ -65,12 +23,14 @@
                 Tempo de filme:<br>
                 <p id="Runtime" style="color: red; font-weight: bold"></p>
                 <hr>
-                Genero:
+                Gênero:
                 <p id="Genre" style="color: red; font-weight: bold"></p>
                 <hr>
                 Poster:<br>
                 <img id="Poster">
+            </p>
         </div>
-</form>
+    </form>
+    <script src="./Trabalho1bim.js"></script>
 </body>
 </html>
