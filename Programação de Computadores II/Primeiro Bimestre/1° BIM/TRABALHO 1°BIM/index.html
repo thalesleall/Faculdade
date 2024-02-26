@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie API</title>
+    <link rel="stylesheet" type="text/css" href="./Trabalho1bim.css">
+</head>
+<body>
+    <form id="formulario">
+        <div id="input">
+            Digite o nome do seu filme: <br><input type="text" id="filme" placeholder="The Wolf of Wall Street">
+            <button type="button" onclick="buscaFilme()">Buscar</button>
+        </div>
+        <div id="resposta">
+            <p>
+                Título do filme:
+                <p id="title" style="color: red; font-weight: bold"></p>
+                <hr>
+                Data de lançamento:
+                <p id="Released" style="color: red; font-weight: bold"></p>
+                <hr>
+                Tempo de filme:<br>
+                <p id="Runtime" style="color: red; font-weight: bold"></p>
+                <hr>
+                Gênero:
+                <p id="Genre" style="color: red; font-weight: bold"></p>
+                <hr>
+                Poster:<br>
+                <img id="Poster">
+            </p>
+        </div>
+    </form>
+    <script src="./Trabalho1bim.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(90deg, #f5f5f5 50%, #f5f5f5 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: fit-content;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.51);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.41);
+}
+#resposta img{
+    max-height: 250px;
+}
+#input {
+  margin: 35px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+#input input{
+    height: 50px;
+  width: 200px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 25px;
+  font-weight: 500;
+}
+
+#input input:focus{
+    outline: none;
+  border: 2px solid purple;
+}
+
+#input button{
+    padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222222;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+#input button:hover {
+    background-color: #222222;
+    border: 1px solid #ffffff;
+    padding: 9px 19px;
+    color: #ffffff;
+  }
