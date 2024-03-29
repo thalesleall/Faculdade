@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="861b7fdf-62ce-4152-a394-0040d89dd800" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Agregacao-Composicao/src/CarItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Agregacao-Composicao/src/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio 1/src/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicio 1/src/Rio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe1/Ator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe1/AtorFeliz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe1/AtorTriste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe1/Palco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe2/Aniversario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe2/CartaoWeb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe2/DiaDosNamorados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe2/Natal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe4/Coisa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe4/Papel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe4/Pedra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exe4/Tesoura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rh/Assistente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rh/Diretor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rh/Funcionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rh/Gerente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercicio 1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercicio 1/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação de Computadores/Segundo bimestre" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação de Computadores/Segundo bimestre" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2debHl7jXSc0yN8E69DoikYqJoR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.exe4.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/OneDrive/Documentos/Faculdade/Paradigmas de programação I/Heranca",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/OneDrive/Documentos/Faculdade/Paradigmas de programação I/Heranca/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exe2.Main" />
+      <module name="Heranca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exe2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="861b7fdf-62ce-4152-a394-0040d89dd800" name="Changes" comment="" />
+      <created>1710371412435</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710371412435</updated>
+      <workItem from="1710371413536" duration="539000" />
+      <workItem from="1710371971635" duration="1263000" />
+      <workItem from="1710799777520" duration="3838000" />
+      <workItem from="1710974070605" duration="3811000" />
+      <workItem from="1711285628086" duration="1194000" />
+      <workItem from="1711405337973" duration="4368000" />
+      <workItem from="1711578693760" duration="914000" />
+      <workItem from="1711579963262" duration="411000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/exe2/Main.java</url>
+          <line>6</line>
+          <properties class="exe2.Main" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
