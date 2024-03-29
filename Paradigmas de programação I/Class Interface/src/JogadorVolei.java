@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface JogadorVolei {
+public interface JogadorVolei {
+    public void sacar();
+    public void cortar();
 }

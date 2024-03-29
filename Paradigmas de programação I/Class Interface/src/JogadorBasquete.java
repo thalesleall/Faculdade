@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface JogadorBasquete {
+public interface JogadorBasquete {
+    public void baterLanceLivre();
+    public void arremessar();
 }

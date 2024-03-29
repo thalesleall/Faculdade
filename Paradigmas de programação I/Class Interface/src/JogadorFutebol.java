@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface JogadorFutebol {
+public interface JogadorFutebol {
+    public void baterPenalti();
+    public void cobrarEscanteio();
 }
