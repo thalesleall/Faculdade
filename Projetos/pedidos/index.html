@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Pedido de Pizza</title>
+  </head>
+  <body>
+    <h2>Gerador de Pedido de Pizza</h2>
+    <form id="pedidoForm" onsubmit="gerarPedido(); return false;">
+      <label for="recheadas">Pizzas Recheadas:</label><br />
+      <select id="recheadas" name="recheadas">
+        <option value="Não">Não</option>
+        <!-- Options preenchidos dinamicamente via JavaScript -->
+      </select>
+      <input
+        type="number"
+        id="quantidadeRecheadas"
+        name="quantidadeRecheadas"
+        min="0"
+        value="0"
+      /><br />
+
+      <label for="bordas">Bordas:</label><br />
+      <select id="bordas" name="bordas">
+        <option value="Não">Não</option>
+        <!-- Options preenchidos dinamicamente via JavaScript -->
+      </select>
+      <input
+        type="number"
+        id="quantidadeBordas"
+        name="quantidadeBordas"
+        min="0"
+        value="0"
+      /><br />
+
+      <label for="doces">Doces:</label><br />
+      <select id="doces" name="doces">
+        <option value="Não">Não</option>
+        <!-- Options preenchidos dinamicamente via JavaScript -->
+      </select>
+      <input
+        type="number"
+        id="quantidadeDoces"
+        name="quantidadeDoces"
+        min="0"
+        value="0"
+      /><br />
+
+      <label for="bebidas">Bebidas:</label><br />
+      <select id="bebidas" name="bebidas">
+        <option value="Não">Não</option>
+        <!-- Options preenchidos dinamicamente via JavaScript -->
+      </select>
+      <input
+        type="number"
+        id="quantidadeBebidas"
+        name="quantidadeBebidas"
+        min="0"
+        value="0"
+      /><br />
+
+      <label for="precoEntrega">Preço da Entrega:</label><br />
+      <input
+        type="number"
+        id="precoEntrega"
+        name="precoEntrega"
+        min="0"
+        value="0"
+      /><br />
+
+      <label for="endereco">Endereço de Entrega:</label><br />
+      <textarea id="endereco" name="endereco" rows="4" cols="50"></textarea
+      ><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="pedidoOutput"></div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
