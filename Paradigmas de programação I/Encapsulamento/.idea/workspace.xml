@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="322a5502-f747-4342-a229-edf35f119ac7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Exercicio 1/src/Produto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercicio 1/src/Rio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercicio 1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercicio 1/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicios-Tudo/src/lista3_exe1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercicios-Tudo/src/lista3_exe1/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Class Interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Class Interface/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Programação de Computadores/Segundo bimestre" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação de Computadores/Segundo bimestre" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projetos/Python/txt-converter/.flaskenv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projetos/Python/txt-converter/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projetos/Python/txt-converter/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projetos/Python/txt-converter/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projetos/Python/txt-converter/app/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projetos/Python/txt-converter/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projetos/Python/txt-converter/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projetos/Python/txt-converter/txt-converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projetos/Python/txt-converter/txt-converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projetos/zap-gpt/zap-gpt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projetos/zap-gpt/zap-gpt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +31,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2dKGPBQ0czdJi19GoyyuZTeAsYU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,6 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/OneDrive/Documentos/Faculdade/Paradigmas de programação I/Heranca",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709749332915</updated>
       <workItem from="1709749333986" duration="3839000" />
+      <workItem from="1711986011089" duration="39000" />
     </task>
     <servers />
   </component>
