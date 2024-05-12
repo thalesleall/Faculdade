@@ -1,0 +1,8 @@
+API:
+    Application Program Interface//<= endpoint
+
+    @GetMapping("/soma")
+    public float soma(float a, float b){
+           return a + b;
+    }
+    API => Comunicação de aplicativos

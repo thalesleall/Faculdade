@@ -1,0 +1,16 @@
+Cadastro de Doadores:
+O sistema deve permitir o cadastro de novos doadores, incluindo informações como nome, CPF (para pessoas físicas), CNPJ (para pessoas jurídicas), endereço, telefone e e-mail.
+Deve ser possível distinguir entre doadores pessoa física e pessoa jurídica.
+Registro de Doações:
+Os funcionários devem poder registrar todas as doações recebidas, incluindo a data da doação, o valor, uma descrição opcional e o status da doação (por exemplo: pendente ou recebida).
+As doações devem estar associadas aos respectivos doadores.
+Cadastro de Famílias Carentes:
+Deve ser possível cadastrar as famílias carentes atendidas pela instituição, incluindo informações como nome da família, endereço, telefone, número de membros da família e observações adicionais, como necessidades específicas.
+Associação de Doações a Famílias Carentes:
+Os funcionários devem ser capazes de associar cada doação recebida a uma família carente específica.
+Controle de Acesso ao Sistema:
+Deve existir um sistema de controle de acesso ao banco de dados para garantir a segurança das informações.
+Os funcionários devem ter diferentes níveis de acesso de acordo com suas responsabilidades na instituição.
+Relatórios e Consultas:
+O sistema deve fornecer funcionalidades para gerar relatórios e consultas sobre as doações recebidas, famílias atendidas, certificações de segurança e manutenção da infraestrutura.
+Os relatórios devem ser personalizáveis e permitir filtragem por diferentes critérios, como data, tipo de doador, status da doação, entre outros.

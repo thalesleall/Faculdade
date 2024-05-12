@@ -1,107 +1,30 @@
-var json = require("./informations.json") 
-async function loadJSON (json) {
-  const res = await fetch(json);
-  return await res.json();
-}
-loadJSON('../services/contributors.JSON').then(data => {
-  console.log(data[0].pedidos);
-});
+let checkboxMeiaPizza = document.getElementById("meia-pizza-check");
+let selectMeiaPizza = document.getElementById("meia-pizza");
 
-var cardapio = {
-  "recheadas": {
-    "Calabresa": 42.99,
-    "Calabresa c/ Catupiry": 45.99,
-    "4 Queijos": 49.99,
-    "Portuguesa": 49.99,
-    "Marguerita": 46.99
-  },
-  "bordas": {
-    "Calabresa": 39.99,
-    "Calabresa c/ Catupiry": 42.99,
-    "4 Queijos": 42.99,
-    "Portuguesa": 42.99,
-    "Marguerita": 42.99
-  },
-  "doces": {
-    "Morango c/ Nutella": 15.00,
-    "Banana caramelizada c/ chocolate branco": 15.00
-  },
-  "bebidas": {
-    "Coca-cola 2L": 13.00,
-    "Guaraná 1L": 7.50,
-    "Coca-cola 600ML": 7.50,
-    "Coca-cola lata 350ML": 6.00,
-    "Guaraná lata 350ML": 5.50
-  }
-};
-
-// Função para preencher os selects de itens baseado na categoria selecionada
-function popularItens(categoria, selectId) {
-  var select = document.getElementById(selectId);
-  select.innerHTML = '';
-
-  var option = document.createElement('option');
-  option.value = "Não";
-  option.text = "Não";
-  select.appendChild(option);
-
-  for (var item in cardapio[categoria]) {
-    var option = document.createElement('option');
-    option.value = item;
-    option.text = item;
-    select.appendChild(option);
+function habilita() {
+  if (checkboxMeiaPizza.checked) {
+    selectMeiaPizza.removeAttribute("disabled");
+  } 
+  else if (!checkboxMeiaPizza.checked) {
+    selectMeiaPizza.setAttribute("disabled", "disabled");
   }
 }
+habilita();
+checkboxMeiaPizza.addEventListener("change", habilita);
 
-// Chamando a função quando a página carrega para popular os selects
-window.onload = function() {
-  popularItens('recheadas', 'recheadas');
-  popularItens('bordas', 'bordas');
-  popularItens('doces', 'doces');
-  popularItens('bebidas', 'bebidas');
-};
 
-function gerarPedido() {
-  var recheadaSelecionada = document.getElementById('recheadas').value;
-  var quantidadeRecheadas = parseInt(document.getElementById('quantidadeRecheadas').value);
-  var valorRecheada = (cardapio['recheadas'][recheadaSelecionada] || 0) * quantidadeRecheadas;
-  
-  var bordaSelecionada = document.getElementById('bordas').value;
-  var quantidadeBordas = parseInt(document.getElementById('quantidadeBordas').value);
-  var valorBorda = (cardapio['bordas'][bordaSelecionada] || 0) * quantidadeBordas;
-  
-  var doceSelecionado = document.getElementById('doces').value;
-  var quantidadeDoces = parseInt(document.getElementById('quantidadeDoces').value);
-  var valorDoce = (cardapio['doces'][doceSelecionado] || 0) * quantidadeDoces;
-  
-  var bebidaSelecionada = document.getElementById('bebidas').value;
-  var quantidadeBebidas = parseInt(document.getElementById('quantidadeBebidas').value);
-  var valorBebida = (cardapio['bebidas'][bebidaSelecionada] || 0) * quantidadeBebidas;
+// class pizza{
+//   tipo = ""; //Com borda ou recheada
+//   doisSabores = false; // Se é pizza meio a meio
+//   sabor = ""; // sabores
+//   constructor(tipo, doisSabores, sabor, sabor2){
+//     this.tipo = tipo;
+//     this.doisSabores = doisSabores;
+//     this.sabor = sabor;
+//     this.sabor2 = sabor2;
+//   }
+// }
 
-  var precoEntrega = parseFloat(document.getElementById('precoEntrega').value) || 0;
+// const pizza1 = new pizza("recheada", true, "Calabresa")
+// console.log(pizza1) 
 
-  var valorTotal = valorRecheada + valorBorda + valorDoce + valorBebida + precoEntrega;
-
-  var endereco = document.getElementById('endereco').value;
-
-  var mensagem = 'Pedido de Pizza:\n';
-  
-  if (recheadaSelecionada != "Não") {
-    mensagem += 'Pizza Recheada: ' + recheadaSelecionada + ' - Quantidade: ' + quantidadeRecheadas + ' - Valor: R$' + valorRecheada.toFixed(2) + '\n';
-  }
-  if (bordaSelecionada != "Não") {
-    mensagem += 'Borda: ' + bordaSelecionada + ' - Quantidade: ' + quantidadeBordas + ' - Valor: R$' + valorBorda.toFixed(2) + '\n';
-  }
-  if (doceSelecionado != "Não") {
-    mensagem += 'Doce: ' + doceSelecionado + ' - Quantidade: ' + quantidadeDoces + ' - Valor: R$' + valorDoce.toFixed(2) + '\n';
-  }
-  if (bebidaSelecionada != "Não") {
-    mensagem += 'Bebida: ' + bebidaSelecionada + ' - Quantidade: ' + quantidadeBebidas + ' - Valor: R$' + valorBebida.toFixed(2) + '\n';
-  }
-
-  mensagem += 'Preço da Entrega: R$' + precoEntrega.toFixed(2) + '\n';
-  mensagem += 'Endereço de Entrega: ' + endereco + '\n';
-  mensagem += 'Valor Total: R$' + valorTotal.toFixed(2);
-
-  document.getElementById('pedidoOutput').innerText = mensagem;
-}

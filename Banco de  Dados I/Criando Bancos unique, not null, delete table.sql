@@ -1,4 +1,4 @@
---Criando a table "tb_empregados"
+	--Criando a table "tb_empregados"
 CREATE TABLE tb_empregados(
 rg				VARCHAR(11),
 nm_empregado	VARCHAR(60),

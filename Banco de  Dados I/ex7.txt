@@ -1,0 +1,41 @@
+1) O operador que deve ser utilizado para selecionar tuplas que atendam a determinado predicado ou condição é o operador de **seleção**. Seu símbolo é o **σ** (sigma).
+
+2) O operador que deve ser utilizado para gerar novas relações, excluindo alguns atributos, é o operador de **projeção**. Seu símbolo é o **π** (pi).
+
+3) O operador de **união (U)** é usado para combinar as tuplas de duas relações que possuem o mesmo número de atributos e os mesmos tipos de dados. As restrições são que as duas relações devem ser compatíveis com a união, ou seja, devem ter o mesmo número de atributos e os mesmos tipos de dados.
+
+4) A operação **produto cartesiano (X)** entre duas relações resulta em uma nova relação que contém todas as combinações possíveis de tuplas das duas relações. Portanto, se a relação `tb_a` possui 100 tuplas e a relação `tb_b` possui 200 tuplas, a operação `(tb_a) X (tb_b)` resultará em `100 * 200 = 20000` tuplas. Isso ocorre porque cada tupla em `tb_a` é emparelhada com cada tupla em `tb_b`, resultando em `100 * 200 = 20000` combinações possíveis.
+
+
+SELECT * FROM pessoas_fisicas WHERE orgao_emissor = ‘SSP’;
+
+
+6) ```sql
+SELECT cpf FROM pessoas_fisicas WHERE nome = 'Tony Ramos';
+
+SELECT nome, sexo FROM pessoas_fisicas WHERE nome = ‘Luciano Huck’;
+
+
+8) ```sql
+SELECT nome, cpf, sexo FROM pessoas_fisicas WHERE nome IN ('Christiane Torloni', 'Tony Ramos');
+
+SELECT nome, sexo, data_nascimento FROM pessoas_fisicas WHERE data_nascimento < ‘1970-01-01’;
+
+
+10) ```sql
+SELECT nome, sexo, codigo_estado_civil FROM pessoas_fisicas WHERE sexo = 'F' OR codigo_estado_civil = 4;
+
+SELECT nome, identidade, orgao_emissor, data_nascimento FROM pessoas_fisicas WHERE sexo = ‘F’ AND orgao_emissor = ‘SSP’ AND data_nascimento IN (‘1970-07-18’, ‘1970-08-07’);
+
+
+12) ```sql
+SELECT codigo_estado_civil FROM tb_estado_civil EXCEPT SELECT codigo_estado_civil FROM tb_pessoa_fisica;
+
+SELECT DISTINCT codigo_estado_civil FROM (SELECT codigo_estado_civil FROM tb_estado_civil UNION ALL SELECT codigo_estado_civil FROM tb_pessoa_fisica);
+
+
+14) ```sql
+SELECT p.nome, p.sexo, p.data_nascimento, e.descricao FROM pessoas_fisicas p JOIN estado_civil e ON p.codigo_estado_civil = e.codigo WHERE p.data_nascimento > '1975-12-31';
+
+WITH TEMP AS (SELECT nome FROM pessoas_fisicas WHERE sexo = ‘F’), TEMP2 AS (SELECT nome FROM pessoas_fisicas WHERE data_nascimento > ‘1975-12-31’) SELECT nome FROM TEMP INTERSECT SELECT nome FROM TEMP2;
+
