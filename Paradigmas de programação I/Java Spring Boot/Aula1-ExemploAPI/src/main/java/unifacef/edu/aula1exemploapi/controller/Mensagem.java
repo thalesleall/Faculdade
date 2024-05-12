@@ -1,8 +1,6 @@
 package unifacef.edu.aula1exemploapi.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class Mensagem {
@@ -27,5 +25,24 @@ public class Mensagem {
             }
         }
         return numero + " É primo";
+    }
+    @PostMapping("/insere")
+    public String insere(){
+        return "Recurso inserido no servidor";
+    }
+
+    @DeleteMapping("/remove")
+    public String remove(){
+        return "Recurso removido do servidor";
+    }
+
+    @PutMapping("/atualiza")
+    public String atualiza(){
+        return "Recursos foram atualizados no servidor";
+    }
+
+    @PatchMapping("/atualiza/{id}")
+    public String atualiza(@PathVariable int id){
+        return "Recurso com id " + id + " atualizado no servidor";
     }
 }

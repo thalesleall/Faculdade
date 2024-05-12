@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="form">
-        <form action="">
-          
-          <div id="PizzasDiv">
-            <div class="sabores-pizza">
-              <select name="sabores" id="sabores">
-                <option value="0" id="sabores">Não</option>
-              </select>
-                <label for="sabores"></label>
-                <select name="meia-pizza" disabled id="meia-pizza" >
-                  <option value="0" id="meia-pizza">Não</option>
-              </select>
-                  <label for="meia-pizza"></label>
-    
-              <input type="checkbox" name="meia-pizza-check" id="meia-pizza-check">
-              2 Sabores
-              <button onclick="generate(event)"><ion-icon name="add-circle-outline"></ion-icon></button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <form action="">
+        Pizza salgada
+        <div id="PizzasDiv">
+          <div class="sabores-pizza">
+            <select name="massas" id="massas">
+              <option id="recheada">RECHEADA</option>
+              <option id="borda">COM BORDA</option>
+              <option id="simples">SIMPLES</option>
+            </select>
+            <select name="sabores" id="sabores">
+              <option id="calabresa">calabresa</option>
+              <option id="portuguesa">portuguesa</option>
+            </select>
+            <label for="sabores"></label>
+            
+            <select name="meia-pizza" disabled id="meia-pizza" >
+              <option id="calabresa">calabresa</option>
+              <option id="portuguesa">Portuguesa</option>
+            </select>
+            <label for="meia-pizza"></label>
+
+            <input type="checkbox" name="meia-pizza-check" id="meia-pizza-check">
+            2 Sabores
+            <button onclick="addPizza(event)"><ion-icon name="add-circle-outline"></ion-icon></button>
+          </div>
+        </div>
+        
+        Pizzas doces
+        <div class="pizzas-doces">
+          <select name="pizza-doce" id="pizza-doce">
+            <option>Morango</option>
+            <option>Banana</option>
+          </select> 
+          <button onclick="addPizzaDoce(event)"><ion-icon name="add-circle-outline"></ion-icon></button>
+        </div>
+        Bebida
+        <div class="bebidas">
+          <select name="bebidas" id="bebidas">
+            <option id="coca-cola">Coca-Cola 2L</option>
+            <option id="guarana">Guaraná 1L</option>
+          </select>
+          <button onclick="addBebida(event)"><ion-icon name="add-circle-outline"></ion-icon></button>
+        </div>
+
+        <div class="entrega">
+          <div class="card-container">
+            <div class="panel">
+              <input type="text" placeholder="Address" id="location-input"/>
+              <button onclick="getDistance(enderecoDeEntrega, event)" id="calculate-distance-button">teste</button>
             </div>
-            
-            
           </div>
-          
-          
-          <div class="pizzas-doces">
-            <select name="pizza-doce" id="pizza-doce">
-              <option value="0">Sem
-              </option>
-            </select> 
-          </div>
-
-          
-        </form>
-      </div>
+        </div>
+      </form>
+      <textarea name="" disabled id="texttarea" cols="30" rows="10"></textarea>
     </div>
-    <script src="./scripts.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-  </body>
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaKFkmIz3lxbzzhMbV7w0-_s_8I1wLEqU&libraries=places,marker&callback=initMap&solution_channel=GMP_QB_addressselection_v2_cA" async defer></script>
+  <script src="./scripts.js"></script>
+</body>
 </html>
