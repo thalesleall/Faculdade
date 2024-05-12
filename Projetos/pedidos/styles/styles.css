@@ -1,47 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: helvetica;
 }
 
-#pedido{
-  height: fit-content;
-  width: 500px;
-  margin: 0 auto;
-  padding: 10px;
-  border: black 1px rgba(0,0,0,0.1);
-  border-radius: 20px;
-  box-shadow: 15px 18px 10px -6px rgba(0,0,0,0.1);
-}
-
-.col-12 input,
-.col-12 #inputZip{
-  display: inline-block;
-  align-items: start;
-  width: fit-content;
-}
-.col-12 {
-  display: flex;
-}
-
-#inputZip {
-  flex: 1;
-  width: 5%; 
-}
-
-#adress {
-  flex: 11;
-  width: 80%;
-}
-
-#specificSizeSelect{
-  width: 250px;
-}
-
-#secondFlavorWrapper {
-  display: none;
-}
-
-.form-check {
-  margin-bottom: 0; 
+#location-input{
+  width: 300px;
+  height: 40px;
 }
