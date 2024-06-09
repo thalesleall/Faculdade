@@ -14,11 +14,24 @@ POST(INSERT) -> INSERE UM RECURSO NO SERVIDOR
 DELETE(REMOVE)	-> REMOVE UM RECURSO NO SERVIDOR
 
 PUT(UPDATE) -> ATUALIZA VÁRIOS RECURSOS NO SERVIDOR
-
+	-> Altera todos os recursos do servidor
+	-> Update sem clausula Where(bd)
 PATCH(UPDATE WHERE) -> ATUALIZA UM RECURSO NO SERVIDOR
-
+	->Altera um recurso em especifico, update com clausula
 JAVA(ORIENTADA A OBJETO) <-> POSTGRESSQL(BD RELACIONAL)
 
 	MAPEAMENTO OBJETO-RELACIONAL(ORM)(UTILIZA-SE O JPA)
 
+
+
+
+Front end - Insomnia --passa--> FilmeDTO
+
+Back end - JavaSpringBoot --FilmeDTO--> 
+
+controler
+e se comunicam atraves do filmedto
+service se comunica com o postgres atraves do filme entity
+
+FilmeDTO e filmEntity se comunicam atraves do converteDTO e atraves do convertEntity
 

@@ -1,1 +1,0 @@
-let url = `https://maps.googleapis.com/maps/api/geocode/json?address=6714+Rua+Dejanira+Eufrasia+Ferreira&key=AIzaSyBaKFkmIz3lxbzzhMbV7w0-_s_8I1wLEqU`
