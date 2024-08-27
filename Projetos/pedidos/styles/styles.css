@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +7,14 @@
 #autocomplete{
   width: 300px;
   height: 40px;
+=======
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#location-input{
+  width: 300px;
+  height: 40px;
+>>>>>>> bd7decde642d8b1e9e5ef74133ae25fd744755ba
 }
