@@ -1,0 +1,20 @@
+Compronentes são funções ou classes que retornam elementos react
+com tyoescricpt podemos definir tipos para as props e o retorno
+
+Tipos de componentes: Funcionais e de classe
+Funcionais: Simples, sem estado, utilizam React FC
+de class: Mais complexos, com estado, utilizam react componente
+
+Props(Propiedades)
+TS permite definir interfaces para as props
+o typescript verifica a conformidade das props passadas ao componete
+
+Renderização condicional e listas
+
+Renderize diferentes componentes ou elementos com base em condições; Use operadores ternários ou if statements
+
+Listas
+Renderize listas de elementos com map 
+TS permite definir o tipo dos elementos da lista
+
+Chaves

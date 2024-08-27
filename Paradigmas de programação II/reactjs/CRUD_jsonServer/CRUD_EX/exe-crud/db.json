@@ -1,0 +1,20 @@
+{
+  "cars": [
+    {
+      "id": "",
+      "model": "Ka",
+      "brand": "Ford",
+      "year": "2008",
+      "color": "Black",
+      "kms": "113000"
+    },
+    {
+      "id": "",
+      "model": "Uno",
+      "brand": "Fiat",
+      "year": "2018",
+      "color": "Silver",
+      "kms": "79000"
+    }
+  ]
+}

@@ -8,12 +8,15 @@ const selectBebidas = document.getElementById("bebidas");
 const inputEndereco = document.getElementById("endereco")
 const inputEntrega = document.getElementById("precoEntrega")
 var selectPagamento = document.getElementById("pagamento")
+const xmlFilePath = './cardapio.xml';
 var troco = document.getElementById("troco")
 let meiaPizzaIf = false;
 let pizzasSalgadas = "";
 let pizzasDoces = "";
 let bebidas = "";
 let informacoes = "";
+let jsonResult;
+
 
 function setHorario(){
   const dataAtual = new Date();
@@ -91,3 +94,71 @@ function finalizarPedido(){
   }
   textArea.value = formatPedido();
 }
+
+// Declara a variável global
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Função chamada quando a página é carregada
+    async function onPageLoad() {
+        console.log('Página carregada');
+        // Chame sua função aqui
+        jsonResult = await fetchXmlAndConvertToJson('./cardapio.xml');
+        console.log(jsonResult);  // Exibe o JSON resultante
+    }
+
+    // Função para buscar o XML e converter para JSON
+    async function fetchXmlAndConvertToJson(filePath) {
+        try {
+            const response = await fetch(filePath);
+            const xmlText = await response.text();
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
+
+            const json = xmlToJson(xmlDoc);
+            return json;  // Retorna o JSON resultante
+        } catch (err) {
+            console.error(err);
+            return null;  // Em caso de erro, retorna null
+        }
+    }
+
+    // Função para converter XML DOM para JSON
+    function xmlToJson(xml) {
+        let obj = {};
+        if (xml.nodeType === 1) { // Elemento
+            if (xml.attributes.length > 0) {
+                obj["@attributes"] = {};
+                for (let j = 0; j < xml.attributes.length; j++) {
+                    const attribute = xml.attributes.item(j);
+                    obj["@attributes"][attribute.nodeName] = attribute.nodeValue;
+                }
+            }
+        } else if (xml.nodeType === 3) { // Texto
+            obj = xml.nodeValue;
+        }
+
+        if (xml.hasChildNodes()) {
+            for (let i = 0; i < xml.childNodes.length; i++) {
+                const item = xml.childNodes.item(i);
+                const nodeName = item.nodeName;
+                if (typeof (obj[nodeName]) === "undefined") {
+                    obj[nodeName] = xmlToJson(item);
+                } else {
+                    if (typeof (obj[nodeName].push) === "undefined") {
+                        const old = obj[nodeName];
+                        obj[nodeName] = [];
+                        obj[nodeName].push(old);
+                    }
+                    obj[nodeName].push(xmlToJson(item));
+                }
+            }
+        }
+        return obj;
+    }
+
+    onPageLoad();
+});
+
+
+
